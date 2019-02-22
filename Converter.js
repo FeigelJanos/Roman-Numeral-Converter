@@ -19,9 +19,8 @@ function convertToRoman(num) {
  for (let i=0; i<4; i++){
   if(arabicArr[i]>0){
 
- for (let j=0; j<9; j++){
-  let checker=j+1;
-   if(checker==arabicArr[i]){
+ for (let j=1; j<10; j++){
+   if(j==arabicArr[i]){
       answer= answer + romanArr[i][j]; 
    }     
      }
